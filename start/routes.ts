@@ -35,4 +35,8 @@ Route.group(() => {
   Route.get('/:id', 'JobController.show')
   Route.put('/:id', 'JobController.update')
   Route.delete('/:id', 'JobController.delete')
+
+  Route.post('/:id/images', 'JobImagesController')
+  
 }).prefix('/jobs')
+
