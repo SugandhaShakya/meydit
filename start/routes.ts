@@ -35,4 +35,4 @@ Route.group(() => {
   Route.get('/:id', 'JobController.show')
   Route.put('/:id', 'JobController.update')
   Route.delete('/:id', 'JobController.delete')
-}).prefix('/jobs').middleware('auth') 
+}).prefix('/jobs')
