@@ -19,6 +19,8 @@ import type { AuthConfig } from '@ioc:Adonis/Addons/Auth'
 const authConfig: AuthConfig = {
   guard: 'web',
   guards: {
+
+    
     /*
     |--------------------------------------------------------------------------
     | Web Guard
@@ -80,7 +82,10 @@ const authConfig: AuthConfig = {
         model: () => import('App/Models/User'),
       },
     },
+    
   },
+
+
 }
 
 export default authConfig

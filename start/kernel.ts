@@ -42,5 +42,6 @@ Server.middleware.register([
 |
 */
 Server.middleware.registerNamed({
+  token:() => import('App/Middleware/Token'),
   auth:()=> import('App/Middleware/Auth')
 })

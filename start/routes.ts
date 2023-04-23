@@ -27,3 +27,12 @@ Route.get('/', async ({ view }) => {
 Route.post('/auth/register', 'AuthController.register').as('auth.register')
 Route.post('/auth/login', 'AuthController.login').as('auth.login')
 Route.post('/auth/logout', 'AuthController.logout').as('auth.logout')
+
+
+Route.group(() => {
+  Route.get('/', 'JobController.index')
+  Route.post('/', 'JobController.store')
+  Route.get('/:id', 'JobController.show')
+  Route.put('/:id', 'JobController.update')
+  Route.delete('/:id', 'JobController.delete')
+}).prefix('/jobs').middleware('auth') 

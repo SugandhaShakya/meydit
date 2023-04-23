@@ -29,6 +29,7 @@
     "@adonisjs/shield": "^7.1.0",
     "@adonisjs/validator": "^12.4.2",
     "@adonisjs/view": "^6.2.0",
+    "jsonwebtoken": "^9.0.0",
     "luxon": "^3.3.0",
     "mysql2": "^3.2.3",
     "phc-argon2": "^1.1.4",
